@@ -50,7 +50,7 @@ const Tab1: React.FC = () => {
         <IonCard className="card-animado">
           <IonCardHeader>
             <IonCardTitle>
-              <AnimatedText className="titulo" text="você vai aprender a usar cartões" delay={0.6} />
+              <AnimatedText className="titulo" text="você vai aprender a usar Cartões" delay={0.6} />
             </IonCardTitle>
             <IonCardSubtitle>
               <AnimatedText className="titulo1" text=" Cartão com defeito e a soluçãoes" delay={0.9} />
