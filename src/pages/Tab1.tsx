@@ -1,30 +1,70 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab1.css';
+import {
+  IonContent,IonHeader,IonAvatar,IonPage,IonTitle,IonToolbar,IonCard,IonCardContent,IonCardHeader,IonCardSubtitle,IonCardTitle,} from "@ionic/react";
+import "./Tab1.css";
+
+// Componente reutilizável para animar palavras
+const AnimatedText: React.FC<{
+  text: string;
+  delay?: number;
+  className?: string;
+}> = ({ text, delay = 0, className = "" }) => {
+  return (
+    <span className={className}>
+      {text.split(" ").map((word, i) => (
+        <span
+          key={i}
+          className="animated-word"
+          style={{ animationDelay: `${delay + i * 0.15}s` }}
+        >
+          {word}&nbsp;
+        </span>
+      ))}
+    </span>
+  );
+};
 
 const Tab1: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
+          <IonTitle>
+            <AnimatedText text="Apresentação" />
+          </IonTitle>
         </IonToolbar>
+
+        <IonAvatar className="cabecalho">
+          <img alt="Foto" src="src/img/perfil.jpg" />
+        </IonAvatar>
       </IonHeader>
-      <IonContent fullscreen>
+
+      <IonContent fullscreen  className="fundo-imagem">
         <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
+          <IonToolbar >
+            <IonTitle size="large">
+              <AnimatedText text="Seja bem vindo" delay={0.3} />
+            </IonTitle >
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
-        <IonCard>
-      <IonCardHeader>
-        <IonCardTitle>Titúlo no Cartão</IonCardTitle>
-        <IonCardSubtitle>Subtitulo do Cartão </IonCardSubtitle>
-      </IonCardHeader>
 
-      <IonCardContent>pequena descrição do cartão.</IonCardContent>
-    </IonCard>
+        <IonCard className="card-animado">
+          <IonCardHeader>
+            <IonCardTitle>
+              <AnimatedText className="titulo" text="você vai aprender a usar cartões" delay={0.6} />
+            </IonCardTitle>
+            <IonCardSubtitle>
+              <AnimatedText className="titulo1" text=" Cartão com defeito e a soluçãoes" delay={0.9} />
+            </IonCardSubtitle >
+          </IonCardHeader >
+
+          <IonCardContent>
+            <AnimatedText   
+              className="titulo2"text="Pequena descrição do cartão com efeito suave."
+              delay={1.2}
+              
+            />
+          </IonCardContent >
+        </IonCard >
       </IonContent>
     </IonPage>
   );
