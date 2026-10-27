@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "secondApp",
+=======
+  "name": "myApp",
+>>>>>>> 3afcb7f6669400726f3c43fbd740c37793504174
   "integrations": {
     "capacitor": {}
   },

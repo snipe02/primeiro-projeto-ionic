@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #container {
+=======
+.container {
+>>>>>>> 3afcb7f6669400726f3c43fbd740c37793504174
   text-align: center;
   position: absolute;
   left: 0;
@@ -7,18 +11,30 @@
   transform: translateY(-50%);
 }
 
+<<<<<<< HEAD
 #container strong {
+=======
+.container strong {
+>>>>>>> 3afcb7f6669400726f3c43fbd740c37793504174
   font-size: 20px;
   line-height: 26px;
 }
 
+<<<<<<< HEAD
 #container p {
+=======
+.container p {
+>>>>>>> 3afcb7f6669400726f3c43fbd740c37793504174
   font-size: 16px;
   line-height: 22px;
   color: #8c8c8c;
   margin: 0;
 }
 
+<<<<<<< HEAD
 #container a {
+=======
+.container a {
+>>>>>>> 3afcb7f6669400726f3c43fbd740c37793504174
   text-decoration: none;
 }

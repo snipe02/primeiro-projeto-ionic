@@ -1,0 +1,105 @@
+/* ============================
+   Animação palavra por palavra
+   ============================ */
+.animated-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px) rotateX(-90deg);
+  animation: wordReveal 0.6s ease-out forwards;
+  transform-origin: bottom;
+}
+
+@keyframes wordReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) rotateX(-90deg);
+    filter: blur(6px);
+  }
+  60% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+    filter: blur(0);
+  }
+}
+
+/* ============================
+   Card entra deslizando
+   ============================ */
+.card-animado {
+  animation: cardSlide 0.8s ease-out both;
+}
+
+@keyframes cardSlide {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ============================
+   Avatar flutuante com brilho
+   ============================ */
+.cabecalho {
+  margin: 12px auto;
+  width: 120px;
+  height: 120px;
+  animation: floatAvatar 3s ease-in-out infinite,
+             pulseGlow 3s ease-in-out infinite;
+}
+
+.cabecalho img {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--ion-color-primary);
+}
+
+@keyframes floatAvatar {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(var(--ion-color-primary-rgb), 0.6); }
+  50%      { box-shadow: 0 0 0 12px rgba(var(--ion-color-primary-rgb), 0); }
+}
+
+/* ============================
+   Acessibilidade
+   ============================ */
+@media (prefers-reduced-motion: reduce) {
+  .animated-word,
+  .card-animado,
+  .cabecalho {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+.titulo{
+    color: rgb(67, 245, 8);
+}
+.titulo1{
+    color: rgb(234, 55, 10);
+}
+.titulo2{
+    color: rgb(10, 197, 234);
+}
+
+.fundo-imagem {
+  --background: none; /* Remove o fundo padrão do Ionic */
+  background-image: url("src/img/catt.png"); /* Caminho da sua imagem */
+  background-size: cover; /* Ajusta para cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição */
+  
+}
+
