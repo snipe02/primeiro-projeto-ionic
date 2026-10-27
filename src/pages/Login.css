@@ -1,0 +1,10 @@
+.tela-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  
+}
+.teste {
+  color: red;
+}
