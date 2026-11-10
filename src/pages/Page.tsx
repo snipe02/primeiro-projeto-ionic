@@ -15,7 +15,7 @@ const Page: React.FC = () => {
           </IonButtons>
           <IonTitle>{name}</IonTitle>
         </IonToolbar>
-      </IonHeader>ss
+      </IonHeader>
 
       <IonContent fullscreen>
         <IonHeader collapse="condense">
