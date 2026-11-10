@@ -1,9 +1,6 @@
+
 {
-<<<<<<< HEAD
   "name": "second-app",
-=======
-  "name": "my-app",
->>>>>>> 3afcb7f6669400726f3c43fbd740c37793504174
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -16,19 +13,11 @@
     "lint": "eslint"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@capacitor/app": "8.1.2",
     "@capacitor/core": "8.5.3",
     "@capacitor/haptics": "8.0.2",
     "@capacitor/keyboard": "8.0.6",
     "@capacitor/status-bar": "8.0.4",
-=======
-    "@capacitor/app": "8.1.1",
-    "@capacitor/core": "8.5.2",
-    "@capacitor/haptics": "8.0.2",
-    "@capacitor/keyboard": "8.0.5",
-    "@capacitor/status-bar": "8.0.3",
->>>>>>> 3afcb7f6669400726f3c43fbd740c37793504174
     "@ionic/react": "^9.0.0",
     "@ionic/react-router": "^9.0.0",
     "ionicons": "^8.1.0",
@@ -38,11 +27,7 @@
     "react-router-dom": "^6.30.0"
   },
   "devDependencies": {
-<<<<<<< HEAD
     "@capacitor/cli": "8.5.3",
-=======
-    "@capacitor/cli": "8.5.2",
->>>>>>> 3afcb7f6669400726f3c43fbd740c37793504174
     "@testing-library/dom": ">=7.21.4",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^16.2.0",

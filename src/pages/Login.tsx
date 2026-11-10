@@ -1,4 +1,4 @@
-import {  IonCard, IonItem, IonButton,IonInput, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle} from '@ionic/react';
+import {  IonCard, IonItem, IonButton,IonInput, IonCardContent, IonCardHeader, IonCardTitle} from '@ionic/react';
 import { useParams } from 'react-router';
 import './Login.css';
 
@@ -27,9 +27,9 @@ const {name } = useParams<{ name: string; }>();
         <IonItem>
         <IonButton fill="clear">Esqueci a Senha/Email</IonButton>
          </IonItem>
-         <IonItem className="teste">
+         <IonItem className='teste'>
         <IonButton size='full' color="success">Login</IonButton>
-        <IonButton size="full" fill='clear'>Cadastres-se</IonButton>
+        <IonButton routerLink="/" size='full' fill='clear'>Cadastre-se</IonButton>
         </IonItem>
       </IonCardContent>
     </IonCard>

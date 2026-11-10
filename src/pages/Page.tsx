@@ -1,4 +1,4 @@
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButton, IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { useParams } from 'react-router';
 import './Page.css';
 
@@ -15,7 +15,7 @@ const Page: React.FC = () => {
           </IonButtons>
           <IonTitle>{name}</IonTitle>
         </IonToolbar>
-      </IonHeader>
+      </IonHeader>ss
 
       <IonContent fullscreen>
         <IonHeader collapse="condense">
@@ -23,7 +23,10 @@ const Page: React.FC = () => {
             <IonTitle size="large">{name}</IonTitle>
           </IonToolbar>
         </IonHeader>
+        <div className="botao-login">
+        <IonButton routerLink="/login">Login</IonButton>
         
+        </div>
       </IonContent>
     </IonPage>
   );
